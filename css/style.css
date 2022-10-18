@@ -1,0 +1,535 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dosis:wght@300&family=Inter+Tight&family=Roboto&display=swap');
+
+
+
+body {
+    margin:0;
+    background-image: url(https://4.bp.blogspot.com/--g5hxrmXs18/WrOojlvTqcI/AAAAAAAAAnI/QND37Hey4HoYp4tEDI0vEqV-bT8nKFzCwCEwYBhgL/s1600/book-wallpaper-hd-5.jpg);
+    background-size: cover;
+    background-position: center;
+    
+    
+}
+
+.logo{
+    background-color: rgb(187, 251, 251);
+    display: flex;
+    justify-content: center;
+    height: 250px;
+}
+
+
+#nav {
+    width: 100%;
+    background: #333B4E;
+    color: rgb(192, 212, 213);
+    font-family: 'Bebas Neue', cursive;
+  }
+  
+
+  #navlinks{
+    display: flex;
+  }
+
+  #navlinks a {
+    flex-grow: 1;
+    flex-basis: 0;
+    padding: 10px;
+    color: rgb(192, 212, 213);
+    text-decoration: none;
+    text-align: center;
+    font-size: large;
+  }
+  #navlinks a:hover {
+    background: rgb(192, 212, 213);
+    color: #333B4E;
+  }
+  
+
+
+
+.search-container {
+    display:flex;
+    justify-content: center;
+    height: 150px;
+    align-items: center;
+}
+
+.searchinput input{
+width: 400px;
+height:30px;
+border-radius: 0 20px 20px 0;
+border: none;
+background-color: rgb(192, 212, 213);
+font-family: 'Dosis', sans-serif;
+
+}
+
+    
+.searchinput button{
+    width:50px;
+    height: 34px;
+    background-color: #333B4E;
+    border: 0;
+    color: rgb(103, 236, 174);
+    border-radius: 20px 0 0 20px;
+    margin-left: 0;
+}
+    
+
+.book-container{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    
+    
+}
+
+.book-container .card{
+    background-color: rgb(192, 212, 213);
+    color:  rgb(26, 35, 63);
+    width:250px;
+    height:auto;
+    margin: 20px 10px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.book-cover{
+    width: 100%;
+    height: 410px;
+    border-radius: 20px 20px 0 0;
+}
+
+.book-info{
+font-family: 'Inter Tight', sans-serif;
+display: flex;
+flex-direction: column;
+flex: 1;
+justify-content: space-between;
+font-size: smaller;
+}
+
+
+.book-info p{
+    padding: 10px;
+    text-align: center;
+}
+
+.book-info .read-more{
+    display: none;
+}
+
+.buttons{
+    display: flex;
+    width: 100%;
+    height: 60px;
+}
+
+
+.btn-cart {
+    background-color: rgba(136, 148, 139, 0.724);
+    color:  rgb(26, 35, 63);
+    text-decoration:none;
+    flex:2;
+    font-size: smaller;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0 0 0 20px;
+}
+
+.btn-cart:hover{
+    background-color: rgb(100, 237, 173);
+    color: rgb(14, 75, 73);
+}
+
+.btn-wishlist {
+    background-color: rgb(230, 230, 230);
+    text-decoration:none;
+    color:  rgb(26, 35, 63);
+    flex:2;
+    font-size: smaller;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-wishlist:hover{
+    background-color: rgb(100, 237, 173);
+    color: rgb(14, 75, 73);
+}
+
+.btn-buy {
+    background-color: #333B4E;
+    text-decoration:none;
+    color: rgb(230, 230, 230);
+    flex:3;
+    font-size: smaller;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0 0 20px 0;
+}
+
+.btn-buy:hover{
+    background-color: rgb(100, 237, 173);
+    color: rgb(14, 75, 73);
+}
+
+
+.buttons i{
+    font-size: large;
+    margin-bottom: 5px;
+}
+
+
+.checkbutton{
+    display: flex;
+    justify-content:flex-end;
+}
+
+
+.checkoutbtn {
+    background-color:rgb(230, 230, 230);
+    color: rgb(51, 59, 78);
+    width: auto;
+    border: 0;
+    border-radius: 50px;
+    margin:10px;
+    margin-top: 20px;
+    margin-right: 40px;
+    padding: 10px;
+    text-align: center;
+    font-family: 'Bebas Neue', cursive;
+    font-size:large;
+        
+    }
+    
+.checkoutbtn:hover{
+    background-color:  rgb(100, 237, 173);
+    color: rgb(51, 59, 78);
+    }
+
+
+/* CHECKOUT FORM */
+
+
+.heading{
+    color: #333B4E;
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+    font-family: 'Bebas Neue', cursive;
+    margin-top: 50px;    
+}
+
+
+.form-container{
+    display: flex;
+    justify-content: center;
+}
+
+.formdetails{
+    background-color: rgba(52, 61, 80,0.80);
+    color: rgb(230, 230, 230);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 20px;
+    margin: 50px; 
+    height: auto;
+    border-radius: 30px;
+    font-family: 'Inter Tight', sans-serif;
+    font-size: small;
+    width: auto;
+}
+
+.first {
+display:flex;
+justify-content: flex-start;
+flex-direction: column;
+}
+
+.second {
+    display:flex;
+    justify-content: flex-start;
+    flex-direction: column;
+
+    }
+
+
+
+.first h3{
+    background-color: #333B4E;
+    color: rgb(230, 230, 230);
+    padding: 3px;
+    text-align: center;
+}
+
+
+.second {
+    padding-left:30px;
+    padding-top: 30px;
+    
+  
+}
+
+
+.second h3{
+    background-color: #333B4E;
+    color: rgb(230, 230, 230);
+    padding: 3px;
+    text-align: center;
+}
+
+.paymethod ul{
+    list-style-type: none
+}
+    
+
+.input-field {
+    padding: 5px;
+    width: 300px;
+    margin: 5px;
+    border-radius: 10px;
+    border-style:solid;
+    font-family: 'Dosis', sans-serif;
+    font-size: small;   
+    }
+    
+
+
+.placeorderbtn{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.place-order {
+    background-color:rgb(230, 230, 230);
+    color: rgb(51, 59, 78);
+    width:50%;
+    border: 0;
+    border-radius: 50px; 
+    margin:10px;
+    margin-top: 20px;
+    padding: 10px;
+    text-align: center;
+    font-family: 'Bebas Neue', cursive;
+    font-size:large;
+    }
+    
+
+.place-order:hover{
+    background-color:  rgb(100, 237, 173);
+    color: rgb(51, 59, 78);
+    }
+    
+
+
+
+    .order-info{
+        display: flex;
+        width: 300px;
+        border-radius: 10px;
+        border: solid;
+        border-width: thin;
+        padding: 10px;
+        flex-direction: column;
+        }
+        
+        
+        .product-info1 {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            flex-direction: row;
+            width: auto;
+            padding:10px;
+            border-bottom-style: solid;
+        }
+        
+        .product-info1 img{
+            height:100px;
+            width: 50px;
+        }
+        
+        
+        .product-info2 {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-direction: row;
+            width: auto;
+            padding:10px;
+            border-bottom-style: solid;
+        }
+        
+        
+        .product-info2 img{
+            height:100px;
+            width: 50px;
+        }
+        
+        .subtotal-container {
+            display: flex;
+            justify-content: space-between;
+            flex-direction: row;
+            width: auto;
+            padding:10px;
+            
+        }
+        
+        
+        
+        .shipping-container{
+            display: flex;
+            justify-content: space-between;
+            flex-direction: row;
+            width: auto;
+            padding:10px;
+            border-bottom-style: solid;
+        }
+        
+        
+        
+        .total-container{
+            display: flex;
+            justify-content: space-between;
+            flex-direction: row;
+            width: auto;
+           
+            padding:10px;
+        }
+        
+        
+        
+        .promo-container {
+        display: flex;
+        justify-content: center;
+        width:280px;   
+        border-radius: 20px;
+        border: thin solid;
+        padding: 5px;
+        margin: 10px;
+        }
+        
+        
+        .promocode input{
+         width:200px;  
+          border-radius: 20px 0 0 20px;
+          border: none;
+          height: 16px;
+        }
+        
+
+        .promocode button{
+            background-color:rgb(230, 230, 230);
+            color: rgb(51, 59, 78);
+            border-radius: 0 20px 20px 0;
+            border: none;
+           
+
+        }
+        
+
+        .promocode button:hover{
+            background-color:  rgb(100, 237, 173);
+            color: rgb(51, 59, 78);
+            }
+
+
+        .input-promo{
+            font-family: 'Dosis', sans-serif;
+        }
+        
+        .product-info{
+            display: flex;
+            justify-content: space-around;
+            flex-direction: row;
+            width: auto;
+        }
+
+
+   
+
+
+
+ 
+
+@media (max-width:760px){
+
+    
+    .searchinput input{
+    width: 250px;
+    }
+
+    .book-container{
+        flex-direction: column;
+        align-items: center;
+        
+    }
+    .book-container .card {
+        flex-direction: row;
+        height: auto;
+        width: 90%;
+    }
+
+    .book-cover{
+        height: auto;
+        width: 150px;
+        border-radius:20px 0 0 20px;
+    }
+
+    .book-info{
+        background-color: rgb(192, 212, 213);
+        border-radius:0 20px 20px 0;
+        flex:1;
+    }
+
+  
+
+    .btn-cart{
+        border-radius: 0;
+    }
+
+ 
+
+    .formdetails{
+    background-color: none;
+    flex-direction: column;
+    height: auto;
+    }
+   
+    .second {
+    padding-left:0px;
+    padding-top: 0px;
+    }
+
+    .input-field {
+    width: 300px;
+    }
+
+}
+ 
+
+@media (max-width:280px){
+    
+
+    .searchinput input {
+        width: 200px;
+        }
+
+        .book-info span{
+                display: none;
+            }
+            
+        .book-info .read-more{
+            display:inline;
+         }
+    }
+
